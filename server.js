@@ -16,7 +16,7 @@ app.use(fileupload({
 
 //routes
 app.use('/user',require('./routes/userRouter'))
-
+app.use('/api',require('./routes/categoryRouter'))
 
 //connect to mongoDB
 const URI = process.env.MONGODB_URL
