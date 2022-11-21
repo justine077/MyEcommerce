@@ -16,7 +16,7 @@ function DetailProduct() {
                 if(product._id === params.id) setDetailProduct(product)
             });
         }
-    },[params,products])
+    },[params.id,products])
 
     // console.log(detailProduct)
 
