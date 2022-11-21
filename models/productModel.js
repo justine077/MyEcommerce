@@ -34,11 +34,17 @@ const productSchema = new mongoose.Schema({
         type:String,
         required: true
     },
+    checked:{
+        type:Boolean,
+        default:false
+    },
     sold:{
         type:Number,
-        dafault: 0
+        default: 0
     }
 
+},{
+    timestamps:true
 })
 
 module.exports = mongoose.model("Products",productSchema)
