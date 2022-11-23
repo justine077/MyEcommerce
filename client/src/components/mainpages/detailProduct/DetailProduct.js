@@ -30,8 +30,9 @@ function DetailProduct() {
         <div className='box-detail'>
             <div className='row'>
                 <h2>{detailProduct.title}</h2>
-                <h6>#id: {detailProduct.product_id}</h6>
+                
             </div>
+                <h6>id: {detailProduct.product_id}</h6>
                 <span>${detailProduct.price}</span>
                 <p>{detailProduct.description}</p>
                 <p>{detailProduct.content}</p>

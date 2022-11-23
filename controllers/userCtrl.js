@@ -149,6 +149,28 @@ const userCtrl ={
                 message:err.message
             })
         }
+    },
+    addCart: async (req,res)=>{
+        try {
+            const user = await Users.findById(req.user.id)
+            if(!user)
+                return res.status(400).json({
+                    message:"User does not exist"
+                })
+
+                await Users.findOneAndUpdate({_id: req.user.id},{
+                    cart: req.body.cart
+                })
+
+            return res.json({
+                message:"Added to cart"
+            })
+
+        } catch (err) {
+            return res.status(500).json({
+                message:err.message
+            })
+        }
     }
 }
 
