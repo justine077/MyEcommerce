@@ -11,8 +11,9 @@ function Products() {
 
 
   return (
-    <>
-    <div className='products'>
+    <div>
+    <div><h1 className='text-center'>Flash Sales</h1></div>
+    <div className='products'>    
       {
         products.map(product =>{
           return <ProductItem key={product._id} product={product} isAdmin={isAdmin}/>
@@ -21,7 +22,7 @@ function Products() {
       }
     </div>
     {products.length === 0 && <Loading/>}
-    </>
+    </div>
   )
 }
 

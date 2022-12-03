@@ -3,7 +3,7 @@ import BtnRender from './BtnRender'
 
 function ProductItem({product,isAdmin}) {
   return (
-    <div className='product_card'>
+    <div className='product_card mb-5'>
       {
         isAdmin && <input type="checkbox" checked={product.checked}/>
       }

@@ -24,11 +24,11 @@ function BtnRender({product}) {
 
           :
           <>
-              <Link id="btn_buy" to='#!' onClick={() => addCart(product)}>
+              <Link className='text-decoration-none text-white' id="btn_buy" to='#!' onClick={() => addCart(product)}>
                 Buy
               </Link>
 
-              <Link id='btn_view' to={`/detail/${product._id}`}>
+              <Link className='text-decoration-none text-white'id='btn_view' to={`/detail/${product._id}`}>
                 View
               </Link>
           </>

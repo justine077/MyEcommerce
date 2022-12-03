@@ -1,4 +1,4 @@
-header{
+/* header{
     min-height: 70px;
     width: 100%;
     overflow: hidden;
@@ -25,8 +25,8 @@ header ul li:hover{
 }
 .menu{
     display: none;
-}
-.cart-icon{
+} */
+/* .cart-icon{
     position: relative;
     margin-right: 20px;
 }
@@ -39,4 +39,55 @@ header ul li:hover{
     right: -10px;
     padding: 5px 7px;
     font-size: 10px;
+} */
+.header{
+    min-height: 70px;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ddd;}
+* {
+    margin:0;
+    padding:0;
+    
+}
+.cart {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-left: -1rem;
+}
+
+.btn-outline-success.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color:teal;
+    border-color: var(--bs-btn-hover-border-color);
+}
+.cart1 {
+    cursor: pointer;
+    
+}
+
+
+
+.cart1 span:nth-child(2) {
+    padding: 0 3px;
+    font-size: 12px;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    position: relative;
+    top: -.6rem;
+    right: .5rem;
+}
+
+
+.btn[class*="btn-outline-"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

@@ -6,6 +6,7 @@ import Login from './auth/Login'
 import Register from './auth/Register'
 import Cart from './cart/Cart'
 import NotFound from './utils/NotFound/NotFound'
+import Home from '../Homepage/Home';
 
 import {GlobalState} from '../../GlobalState'
 
@@ -18,7 +19,8 @@ function Pages() {
 
   return (
     <Routes>
-        <Route path='/' element={<Products/>}/>
+        <Route path='/products' element={<Products/>}/>
+        <Route path='/' element={<Home/>}/>
 
         <Route path='/detail/:id' element={<DetailProduct/>}/>
 

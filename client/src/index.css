@@ -9,12 +9,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
-.App{
+/* .App{
   max-width: 1230px;
   min-height: 100vh;
   margin: 0 auto;
@@ -32,7 +32,7 @@ button{
   outline: none;
   background: transparent;
   cursor: pointer;
-}
+} */
 
 /*------------------  Header  -----------------*/
 @import url("./components/headers/header.css");
